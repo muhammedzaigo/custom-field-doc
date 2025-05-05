@@ -14,12 +14,6 @@ This document provides detailed information about the Pydantic schemas used for 
 - [Validation Schemas](#validation-schemas)
   - [BaseValidationAttributes](#basevalidationattributes)
   - [BaseValidationValueModal](#basevalidationvaluemodal)
-- [Usage Examples](#usage-examples)
-  - [API Request Validation](#api-request-validation)
-  - [Database to Schema Conversion](#database-to-schema-conversion)
-  - [Schema to Database Conversion](#schema-to-database-conversion)
-  - [Field Validation](#field-validation)
-- [Best Practices](#best-practices)
 
 ## Base Schemas
 
