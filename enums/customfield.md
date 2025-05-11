@@ -32,27 +32,33 @@ class CustomFieldType(Enum):
     TIME = "time"                       # A time input field
     FILE = "file"                       # A file upload field
     IMAGE = "image"                     # An image upload field
+    MULTIPLE_FILE = "multiple_file"     # Multiple file upload field.
+    MULTIPLE_IMAGE = "multiple_image"   # Multiple image upload field.
+    LOCATION = "location"               # Location input field, possibly using coordinates or map picker.
 ```
 
 ### Field Type Descriptions
 
-| Field Type | Description | Validation | Example Use Case |
-|------------|-------------|------------|------------------|
-| `TEXT` | Standard single-line text input | None | Names, short descriptions |
+| Type | Description | Validation | Example Use Case |
+|------|-------------|------------|------------------|
+| `TEXT` | Single-line text input | None | Names, short descriptions |
 | `NUMBER` | Numeric value input | Numeric validation | Age, quantity, score |
 | `EMAIL` | Email address input | Email format validation | Contact information |
 | `PHONE` | Phone number input | Phone format validation | Contact information |
 | `AMOUNT` | Monetary value input | Numeric with decimal validation | Prices, costs, budgets |
 | `TEXTAREA` | Multi-line text input | None | Long descriptions, comments |
-| `SINGLE_DROPDOWN` | Selection from dropdown (single value) | Must be one of predefined options | Categories, status selection |
-| `MULTIPLE_DROPDOWN` | Selection from dropdown (multiple values) | Must be from predefined options | Tags, multi-category selection |
+| `SINGLE_DROPDOWN` | Single selection dropdown | Must be one of predefined options | Categories, status selection |
+| `MULTIPLE_DROPDOWN` | Multiple selection dropdown | Must be from predefined options | Tags, multi-category selection |
 | `TAG` | Tag selection field | None | Keywords, categorization |
 | `RADIO` | Radio button selection | Must be one of predefined options | Single-choice questions |
 | `CHECKBOX` | Checkbox selection | Boolean or multiple selection | Feature toggles, multi-select |
 | `DATE` | Date input | Date format validation | Deadlines, birthdates |
 | `TIME` | Time input | Time format validation | Appointment times |
-| `FILE` | File upload | File type validation | Document uploads |
-| `IMAGE` | Image upload | Image type validation | Profile pictures, product images |
+| `FILE` | Single file upload | File type validation | Document uploads |
+| `IMAGE` | Single image upload | Image type validation | Profile pictures |
+| `MULTIPLE_FILE` | Multiple file upload | File type validation | Document collections |
+| `MULTIPLE_IMAGE` | Multiple image upload | Image type validation | Product galleries |
+| `LOCATION` | Location input | Coordinate validation | Stores, event venues |
 
 ## CustomFieldStatus
 
